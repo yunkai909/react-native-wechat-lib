@@ -29,7 +29,7 @@ def getExtOrIntegerDefault(name) {
 
 android {
 
-  namespace "com.rn.wechatlib"
+  namespace "com.wechatlib"
 
   buildFeatures {
     buildConfig true
