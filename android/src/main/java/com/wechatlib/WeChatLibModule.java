@@ -155,7 +155,9 @@ public class WeChatLibModule extends ReactContextBaseJavaModule implements IWXAP
 
     public static void handleIntent(Intent intent) {
         for (WeChatLibModule mod : modules) {
-            mod.api.handleIntent(intent, mod);
+            if(mod.api != null){
+                mod.api.handleIntent(intent, mod);
+            }
         }
     }
 
